@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Terapia Ocupacional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Terapia Ocupacional - Plan 4</h1>
+  <div class="grid">
+    <!-- Ejemplo de semestre -->
+    <div class="semestre" id="sem-1">
+      <h2>I Semestre</h2>
+      <div class="ramo" data-id="MAT-016">Razonamiento Lógico Matemático</div>
+      <div class="ramo" data-id="BIO-006">Principios de la Biología</div>
+      <div class="ramo" data-id="TOC-078">Fundamentos de Terapia Ocupacional</div>
+    </div>
 
+    <div class="semestre" id="sem-2">
+      <h2>II Semestre</h2>
+      <div class="ramo blocked" data-id="TOC-079" data-prereq="MAT-016">Anatomía Descriptiva</div>
+      <div class="ramo blocked" data-id="TOC-080" data-prereq="BIO-006">Anatomía y Fisiología de los Sistemas</div>
+    </div>
+
+    <!-- Agrega más semestres aquí... -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
